@@ -1,20 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage"
-    android:background="#D38EDF">
+    android:background="#CDF3A1"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome!"
-        android:textSize="70dp"
-        android:fontFamily="cursive"
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        >
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textColor="@color/black">
     </TextView>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="Phone number"
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="110dp"
+        android:text="Enter URL : "
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnUrl"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp">
+    </Button>
+
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Permission"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp">
+    </Button>
+
+</LinearLayout>
